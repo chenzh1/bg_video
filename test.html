@@ -33,10 +33,9 @@
                 function noStream(err) {
                         alert(err);
       }
-document.getElementById("snap").addEventListener("click", function() {
-                
+window.setInterval(function(){                
                 ctx.drawImage(aVideo, 0, 0, 640, 480);//将获取视频绘制在画布上
-});
+}，10);
     </script>
   
 </body>
